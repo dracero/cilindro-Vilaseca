@@ -5,6 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ModelViewer modelPath={"/eje.glb"} />
+    <ModelViewer modelPath={"/cilindroVilaseca.glb"} />
   </React.StrictMode>
 )
