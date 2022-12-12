@@ -11,10 +11,10 @@ const GltfModel = ({ modelPath, scale = 5, position = [-1, 10, -1], action }) =>
   useEffect(() => {
     console.log(actions);
     if (action){
-      actions.circulo.paused=false
-      actions.circulo.play();
+      actions.Action.paused=false
+      actions.Action.play();
      } else  {
-      actions.circulo.paused=true;
+      actions.Action.paused=true;
      }
   })
   return (
