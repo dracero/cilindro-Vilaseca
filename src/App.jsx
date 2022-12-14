@@ -5,7 +5,7 @@ import GltfModel from "./gltf";
 import { Physics} from "@react-three/cannon"
 import { Canvas } from "@react-three/fiber"
 
-const ModelViewer = ({ modelPath, scale = 10, position = [-1 , 1, -2]}) => {
+const ModelViewer = ({ modelPath, scale = 1, position = [-5 , 0.1, -5]}) => {
   const mesh = useRef()
   const [action, setAction] = useState(false)
   const Noaction = () => {
@@ -29,8 +29,8 @@ return (
       <spotLight position={[10, 10, 10]} angle={0.6} penumbra={1} />
       <pointLight position={[-1, -1, -1]} />
         <Suspense fallback={null}>
-        <Physics>
-         <GltfModel modelPath={modelPath} scale={scale} position={position} action={action}/>
+         <Physics>
+          <GltfModel modelPath={modelPath} scale={scale} position={position} action={action}/>
          </Physics>   
         <OrbitControls />
       </Suspense>

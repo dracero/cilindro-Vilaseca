@@ -6,7 +6,7 @@ import { useController } from "@react-three/xr"
 import { useBox } from "@react-three/cannon"
 import * as THREE from "three"
 
-const GltfModel = ({ modelPath, scale = 5, position = [-1, 10, -1], action }) => {
+const GltfModel = ({ modelPath, scale=1, position = [-5, 1, -50], action}) => {
   const mesh = useRef()
   const gltf = useLoader(GLTFLoader, modelPath);
   const {  animations } = useGLTF("/cilindroVilaseca.glb");
@@ -39,6 +39,7 @@ const GltfModel = ({ modelPath, scale = 5, position = [-1, 10, -1], action }) =>
         ref={mesh}
         object={gltf.scene}
         position={position}
+        scale={scale}
       />
     </mesh>
   );
