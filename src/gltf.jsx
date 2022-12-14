@@ -13,6 +13,7 @@ const GltfModel = ({ modelPath, scale=1, position = [-5, 1, -50], action}) => {
   const { actions } = useAnimations(animations, mesh);
   const rightController = useController("right")
   const [ref, api] = useBox(() => ({ type: "Kinematic" }))
+  
   useEffect(() => {
     console.log(actions);
     if (action){
