@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/cannon": "^6.5.0",
     "@react-three/drei": "^9.20.0",
     "@react-three/fiber": "^8.6.0",
-    "@react-three/xr": "^5.0.5",
+    "@react-three/xr": "^5.1.1",
+    "react-xr": "^1.1.0",
     "drei": "^2.2.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-xr": "^1.1.0",
     "three": "^0.143.0"
   },
   "devDependencies": {
