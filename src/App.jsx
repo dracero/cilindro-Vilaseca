@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useRef } from "react";
+import React, { Suspense, useState, useRef, useEffect } from "react";
 import { XR, VRButton} from "@react-three/xr"
 import { OrbitControls } from "@react-three/drei";
 import GltfModel from "./gltf";
@@ -18,6 +18,9 @@ const ModelViewer = ({ modelPath, scale = 1, position = [-5 , 0.1, -5]}) => {
                  Click to STOP
           </button>
   }
+  useEffect(()=>{
+    {alert("Recordar que las fuerzar radiales se aplican sobre el centro de masa")}
+  },[])
 return (
   <div className="wrapper"> 
   <div className="scene-wrapper"> 
